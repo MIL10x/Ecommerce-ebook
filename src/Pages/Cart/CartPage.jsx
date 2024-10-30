@@ -7,7 +7,6 @@ import { CartUse } from "../../context";
 const CartPage = () => {
   const { cartlist, ClearCart } = CartUse();
   usetitle("Cart");
-
   useEffect(() => {
     ClearCart;
   }, [cartlist.length === 0]);
